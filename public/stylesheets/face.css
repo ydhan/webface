@@ -1,0 +1,32 @@
+.compare-face{
+    width: 49%;
+    height: 400px;
+    text-align: center;
+    float: left;
+}
+.compare-face2{
+    width: 49%;
+    height: 400px;
+    text-align: center;
+    float: right;
+}
+#face{
+    font-size: 14px;
+}
+#face2{
+    font-size: 14px;
+}
+.compare-row {
+    text-align: center;
+    margin-top: 48px;
+}
+.btn-compare {
+    width: 200px;
+    line-height: 40px;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 5px;
+    display: inline-block;
+    background-color: #4cb050;
+    transition: background .3s ease;
+}

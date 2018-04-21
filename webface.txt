@@ -1,0 +1,14 @@
+nodejs
+
+$ npm install express-generator -g
+$ express myapp
+$ cd myapp 
+$ npm install
+$ npm start
+
+
+vscode
+
+
+1、nodejs前端  +  nodejs后端
+2、nodejs前端  +  python后端

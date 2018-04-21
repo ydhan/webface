@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>人脸识别-腾讯AI开放平台</title>
+  <meta name="keywords" content="人脸检测与分析、多人脸检测、五官定位、人脸对比、跨年龄人脸识别、人脸搜索、人脸识别" />
+  <meta name="description" content="腾讯人脸识别基于腾讯优图的深度学习算法和海量数据集，对图片和视频源中面部特征进行提取分析。可实现多人脸、跨年龄的人脸识别对比，涵盖人脸检测与分析、五官定位、人脸对比与搜索、跨年龄人脸识别等，为安防监控、人脸美化、智能相册分类等应用场景提供有力的技术支持。" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge,chrome=1">
+
+  <link rel="stylesheet" href="https://yyb.gtimg.com/ai/common/css/global-75a9f73df9.css?max_age=31536000"/>
+
+  <link rel="stylesheet" href="https://yyb.gtimg.com/ai/page/product/face/index-e81692d77b.css?max_age=31536000">
+</head>
+<body>
+  <!--[if lt IE 9]>
+<script src="//yyb.gtimg.com/ai/common/js/lib/update-tips-7614186274.js?max_age=31536000"></script>
+<![endif]-->
+
+
+  <div class="demo">
+    <div class="layout">
+      <h1>功能体验</h1>
+      <div class="demo-tab">
+        <div class="demo-tab-wrap">
+          <a href="javascript:void(0);" class="demo-tab-1 jmod-demo-tab" data-id="1">人脸检测与分析</a>
+          <a href="javascript:void(0);" class="demo-tab-5 jmod-demo-tab" data-id="5">多人脸检测</a>
+          <a href="javascript:void(0);" class="demo-tab-2 jmod-demo-tab" data-id="2">人脸对比</a>
+          <a href="javascript:void(0);" class="demo-tab-6 jmod-demo-tab" data-id="6">跨年龄人脸识别</a>
+          <a href="javascript:void(0);" class="demo-tab-3 jmod-demo-tab" data-id="3">人脸搜索</a>
+          <a href="javascript:void(0);" class="demo-tab-4 jmod-demo-tab" data-id="4">五官定位</a>
+        </div>
+      </div>
+      <div class="img-list jmod-detect-demolist">
+      </div>
+      <div class="img-list jmod-compare-demolist">
+      </div>
+      <div class="img-list jmod-search-demolist">
+      </div>
+      <div class="img-list jmod-shape-demolist">
+      </div>
+
+      <!-- 人脸分析 -->
+      <div class="tab-cont jmod-face-detect">
+        <div class="demo-opt demo-box jmod-uploader-wrapper"></div>
+        <div class="demo-rs demo-box jmod-result-wrapper"></div>
+      </div>
+
+      <!-- 多人脸分析 -->
+      <div class="tab-cont jmod-multi-face">
+        <div class="demo-opt demo-box jmod-uploader-wrapper"></div>
+        <div class="demo-rs demo-box jmod-result-wrapper"></div>
+      </div>
+
+      <!-- 人脸对比 -->
+      <div class="tab-cont jmod-face-compare">
+        <div style="position: relative;">
+          <div class="demo-opt demo-box compare jmod-uploader-left" style="margin-right:18px;">
+          </div>
+          <div class="demo-opt demo-box compare jmod-uploader-right">
+          </div>
+          <div class="ui-loading jmod-result-loading hidden" style="top: 40%;">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="compare-result jmod-compare-result" style="display: none;"><p>相似度:85%</p></div>
+
+        <div class="compare-row">
+          <a href="javascript:void(0);" class="btn-compare jmod-compare-btn">人脸比对</a>
+        </div>
+      </div>
+
+      <!-- 跨年龄人脸识别 -->
+      <div class="tab-cont jmod-age-compare">
+        <div style="position: relative;">
+          <div class="demo-opt demo-box compare jmod-uploader-left" style="margin-right:18px;">
+          </div>
+          <div class="demo-opt demo-box compare jmod-uploader-right">
+          </div>
+          <div class="ui-loading jmod-result-loading hidden" style="top: 40%;">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+
+        <div class="compare-result jmod-compare-result" style="display: none;"><p>相似度:85%</p></div>
+
+        <div class="compare-row">
+          <a href="javascript:void(0);" class="btn-compare jmod-compare-btn">人脸识别</a>
+        </div>
+      </div>
+
+      <!-- 人脸搜索 -->
+      <div class="tab-cont jmod-face-search">
+        <div class="demo-opt demo-box jmod-uploader-wrapper">
+        </div>
+        <!-- 人脸搜索请加上face-search类名 -->
+        <div class="demo-rs demo-box face-search jmod-result-wrapper">
+        </div>
+      </div>
+
+      <!-- 五官定位 -->
+      <div class="tab-cont jmod-face-shape">
+        <div class="demo-opt demo-box jmod-uploader-wrapper">
+        </div>
+        <div class="demo-rs demo-box jmod-result-wrapper">
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+
+  <script src="https://yyb.gtimg.com/ai/common/js/static-common-6145b4fb0c.js?max_age=31536000"></script>
+
+  <script src="https://yyb.gtimg.com/ai/page/product/face/main-93b7fa7dbb.entry.js?max_age=31536000"></script>
+ 
+
+<script>
+  (function() {
+    function isMobile() {
+      return (/(iPhone|iPad|iPod|IOS|Android|Window Phone|SymbianOS)/i.test(navigator.userAgent));
+    }
+
+    function loadScript(url, callback) {
+      var script = document.createElement('script');
+      script.type = 'text/javascript';
+
+      if (script.readyState) { // IE
+        script.onreadystatechange = function () {
+          if (script.readyState == 'loaded' || script.readyState == 'complete') {
+            script.onreadystatechange = null;
+            callback();
+          }
+        }
+      } else { // Others
+        script.onload = function () {
+          callback();
+        };
+      }
+
+      script.src = url;
+      document.body.appendChild(script);
+    }
+
+    if (isMobile()) {
+      // 隐藏按钮
+      var contactQQ = document.getElementsByClassName('jmod-contact-qq');
+      for (var i = 0; i < contactQQ.length; i++) {
+        contactQQ[i].style.display = 'none';
+      }
+      // contactQQ.style.display = 'none';
+    } else {
+      // 动态加载js
+      loadScript(location.protocol + '//wp.qiye.qq.com/qidian/2852060660/d4ea00c645062944618db2ab9228d38f', function () {
+        var contactQQ = document.getElementsByClassName('jmod-contact-qq');
+        for (var i = 0; i< contactQQ.length; i++) {
+          contactQQ[i].addEventListener('click', function() {
+            var wpaIframe = document.getElementById('qidian_wpa_2852060660_25');
+
+            if (!wpaIframe) {
+              return;
+            }
+
+            var iframeDocument = wpaIframe.contentDocument || wpaIframe.contentWindow.document;
+            if (iframeDocument) {
+              var qqIcon = iframeDocument.querySelectorAll('.wpa-container.theme-3 .icon-qq')[0];
+              var doc = qqIcon.ownerDocument;
+              var event = doc.createEvent('MouseEvents');
+              event.initEvent('click', true, true); // All events created as bubbling and cancelable.
+              event.synthetic = true;
+              qqIcon.dispatchEvent(event, true);
+            }
+          });
+        }
+      });
+    }
+  })();
+</script>
+
+
+  <div style="visibility: hidden;">
+    <div class="case case2" style="height:0px; padding: 0px;"></div>
+    <div class="case case3" style="height:0px; padding: 0px;"></div>
+    <div class="case case4" style="height:0px; padding: 0px;"></div>
+    <div class="case case5" style="height:0px; padding: 0px;"></div>
+  </div>
+  <script type="text/javascript" src="https://tajs.qq.com/stats?sId=62593366" charset="UTF-8"></script>
+
+
+</body>
+</html>
