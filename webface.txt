@@ -10,5 +10,5 @@ $ npm start
 vscode
 
 
-1、nodejs前端  +  nodejs后端
-2、nodejs前端  +  python后端
+1.nodejs front +  nodejs backend
+2.nodejs front  +  python backend
